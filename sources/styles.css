@@ -1,0 +1,248 @@
+html {
+    background-color: rgba(80, 220, 40, 0.1);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    margin: 2rem;
+    font-weight: bold;
+    font-size: 4rem;
+    color: #10897b;
+}
+
+p, input, button, div {
+    font-size: 2rem;
+}
+
+p {
+    margin: 2rem;
+    max-width: 60rem;
+    text-align: justify;
+}
+
+input {
+    width: 550px;
+    padding: 5px;
+    text-align: center;
+    margin: 2rem;
+}
+
+button {
+    margin: 2rem;
+    background-color: #10897b;
+    color: azure;
+    font-weight: bold;
+    padding: 15px;
+    box-shadow: 2px 2px 2px black;
+    border-radius: 6px;
+}
+
+#tipp {
+    margin: 1rem;
+    text-align: center;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+}
+
+.line div {
+    width: 5rem;
+    text-align: center;
+    margin: 5px;
+    background-color: #10897b;
+    color: azure;
+    font-weight: bold;
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#line4 {
+    justify-content: space-between;
+}
+
+#countGuesses {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+#solution {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#input {
+    display: flex;
+    align-items: baseline;
+}
+
+#arrow {
+    font-size: 3rem;
+    color: red;
+    animation: arrow 3s infinite;
+}
+
+@keyframes arrow {
+    from {
+        color: red;
+    }
+    to {
+        color: orange;
+    }
+    to {
+        color: yellow;
+    }
+    to {
+        color: orange;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
+
+.error {
+    border-color: red;
+    animation: mymove 3s ease-in-out;
+}
+
+@keyframes mymove {
+    from {
+        border-color: red;
+    }
+    to {
+        border-color: orange;
+    }
+    to {
+        border-color: yellow;
+    }
+    to {
+        border-color: orange;
+    }
+}
+
+.winning {
+    color: #10897b;
+    font-size: 3rem;
+    font-weight: bold;
+    animation: winner 3s infinite;
+}
+
+@keyframes winner {
+    from {
+        color: #a922ce;
+    }
+    to {
+        color: #2238c7;
+    }
+    to {
+        color: #32c722;
+    }
+    to {
+        color: #a5c625;
+    }
+    to {
+        color: #e7dd23;
+    }
+    to {
+        color: #dc901a;
+    }
+    to {
+        color: #c16433;
+    }
+}
+
+@media (min-width: 1200px) {
+    button:hover, .line div:hover, button:hover {
+        cursor: pointer;
+        background-color: #2acbb8;
+    }
+}
+
+@media (max-width: 630px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    p, input, button, div {
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+
+    input {
+        width: 440px;
+        margin: 1rem;
+    }
+
+    #countGuesses {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 580px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p, input, #countGuesses {
+        font-size: 1.3rem;
+    }
+
+    input {
+        width: 380px;
+    }
+}
+
+@media (max-width: 430px) {
+    h1 {
+        margin: 1.5rem;
+    }
+
+    input {
+        width: 290px;
+        font-size: 1rem;
+    }
+
+    #arrow {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 390px) {
+    p, input, button, div {
+        font-size: 1.4rem;
+    }
+    input {
+        width: 270px;
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+    #arrow{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 350px) {
+    h1 {
+        font-size: 2rem;
+    }
+    input{
+        font-size: 0.8rem;
+        width: 220px;
+    }
+    p, button, div {
+        font-size: 1.3rem;
+    }
+}

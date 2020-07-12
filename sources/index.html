@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="index.js"></script>
+    <title>Zahlen-Raten</title>
+</head>
+<body>
+
+<h1>Zahlen Raten</h1>
+<p>
+    Ziel des Spiels ist es, eine zufällige Zahl zu raten.
+    Gib hierfür einfach eine Zahl in das Suchfeld ein und schau, ob du richtig liegst. <br>
+
+</p>
+<div id="input">
+    <input type="text" id="userinput" placeholder="Gib eine Zahl zwischen 0 und 100 ein.">
+    <div id="arrow" class="hidden">☚</div>
+</div>
+
+<div id="tipp"></div>
+
+<div id="countGuesses">
+    <div id="guesses">Deine Versuche: &nbsp</div>
+    <div id="tries"></div>
+</div>
+
+<button id="guessBtn">Raten</button>
+
+<div id="numbers">
+    <div class="line">
+        <div id="BtnNum1">1</div>
+        <div id="BtnNum2">2</div>
+        <div id="BtnNum3">3</div>
+    </div>
+
+    <div class="line">
+        <div id="BtnNum4">4</div>
+        <div id="BtnNum5">5</div>
+        <div id="BtnNum6">6</div>
+    </div>
+
+    <div class="line">
+        <div id="BtnNum7">7</div>
+        <div id="BtnNum8">8</div>
+        <div id="BtnNum9">9</div>
+    </div>
+
+
+    <div class="line" id="line4">
+        <div id="BtnClear">C</div>
+        <div id="BtnNum0">0</div>
+    </div>
+</div>
+
+<div id="solution"></div>
+
+
+</body>
+</html>
